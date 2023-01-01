@@ -1,0 +1,12 @@
+name: Router Demo
+run-name: Example of npm install failing
+on: [push]
+jobs:
+  NPM-Install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          npm install
