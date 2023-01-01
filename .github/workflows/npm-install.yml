@@ -10,3 +10,6 @@ jobs:
       - name: Run npm installation
         run: |
           npm install
+      - name: Attempt to run "npm install @tanstack/react-router@beta --save"
+        run: |
+          npm install @tanstack/react-router@beta --save
